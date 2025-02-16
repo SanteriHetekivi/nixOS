@@ -3,11 +3,11 @@
     "config-hypr": {
       "flake": false,
       "locked": {
-        "lastModified": 1739716959,
-        "narHash": "sha256-jQ6vE2jpgmH4WlQwooF7IEWMvj4LlKaRsC1TzZWWFOo=",
+        "lastModified": 1739722238,
+        "narHash": "sha256-Bb0Uq6j6w27FCD5iX7D2JizFjvvhxc8K+6moqGTSdVY=",
         "owner": "SanteriHetekivi",
         "repo": "hypr",
-        "rev": "73b9e5b87777a5b4c840f9a322d264e3ba81b816",
+        "rev": "cdeaa22472601840783a44898b42428057e1d839",
         "type": "github"
       },
       "original": {
