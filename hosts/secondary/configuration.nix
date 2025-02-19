@@ -9,12 +9,10 @@
     ./../../modules/general.nix
     # Locale settings.
     ./../../modules/locale.nix
-    # Display settings.
-    #./../../modules/display.nix
     # Desktop enviroment.
     ./../../modules/desktop.nix
     # Gaming config.
-    #./../../modules/gaming.nix
+    ./../../modules/gaming.nix
     # Sosial media and messaging apps.
     ./../../modules/sosial.nix
     # Users.

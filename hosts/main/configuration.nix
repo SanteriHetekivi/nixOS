@@ -9,8 +9,8 @@
     ./../../modules/general.nix
     # Locale settings.
     ./../../modules/locale.nix
-    # Display settings.
-    ./../../modules/display.nix
+    # NVIDIA settings.
+    ./../../modules/nvidia.nix
     # Desktop enviroment.
     ./../../modules/desktop.nix
     # Gaming config.
