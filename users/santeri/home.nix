@@ -1,17 +1,16 @@
 { config, pkgs, inputs, ... }:
 
 {
+  programs.home-manager.enable = true;
+
   home = {
     stateVersion = "24.11";
     username = "santeri";
     homeDirectory = "/home/santeri";
-  };
-
-  programs.home-manager.enable = true;
-
-  xdg.configFile = {
-    hypr.source = "${inputs.config-hypr}"; 
-    nvim.source = "${inputs.config-nvim}";
+    file = {
+      ".config/nvim".source = config.lib.file.mkOutOfStoreSymlink "/etc/nixos/config/nvim";
+      ".config/hypr".source = config.lib.file.mkOutOfStoreSymlink "/etc/nixos/config/hypr";
+    };
   };
 
   programs.git = {
@@ -20,3 +19,4 @@
     userName = "Santeri Hetekivi";
   };
 }
+

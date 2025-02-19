@@ -1,16 +1,15 @@
 { config, pkgs, inputs, ... }:
 
 {
+  programs.home-manager.enable = true;
+
   home = {
     stateVersion = "24.11";
     username = "root";
     homeDirectory = "/root";
-  };
-
-  programs.home-manager.enable = true;
-
-  xdg.configFile = {
-    nvim.source = "${inputs.config-nvim}";
+    file = {
+      ".config/nvim".source = config.lib.file.mkOutOfStoreSymlink "/etc/nixos/config/nvim";
+    };
   };
 
   programs.git = {
@@ -19,3 +18,4 @@
     userName = "Santeri Hetekivi";
   };
 }
+
