@@ -1,11 +1,9 @@
 # Development configuration.
-{ pkgs, ... }:
+{ pkgs, programs, ... }:
 
 {
   # List packages installed in system profile.
   environment.systemPackages = with pkgs; [
-    # Git repositories.
-    git
     # Make scripts.
     gnumake
     # Opening ZIP archives.
@@ -15,6 +13,12 @@
     # Rust.
     rustup
   ];
+  
+  # Version control with git.
+  programs.git = {
+    enable = true;
+    config.init.defaultBranch = "main";
+  };
 
   system.stateVersion = "24.11";
 }

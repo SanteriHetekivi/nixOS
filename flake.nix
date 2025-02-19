@@ -28,6 +28,13 @@
 	  inputs.home-manager.nixosModules.default
         ];
       };
+      secondary = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs; };
+        modules = [
+          ./hosts/secondary/configuration.nix
+          inputs.home-manager.nixosModules.default
+        ];
+      };
     };
   };
 }
