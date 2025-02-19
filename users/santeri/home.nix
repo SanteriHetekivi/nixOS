@@ -10,6 +10,7 @@
     file = {
       ".config/nvim".source = config.lib.file.mkOutOfStoreSymlink "/etc/nixos/config/nvim";
       ".config/hypr".source = config.lib.file.mkOutOfStoreSymlink "/etc/nixos/config/hypr";
+      ".config/waybar".source = config.lib.file.mkOutOfStoreSymlink "/etc/nixos/config/waybar";
     };
   };
 

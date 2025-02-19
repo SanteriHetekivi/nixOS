@@ -4,3 +4,6 @@
 [submodule "config/hypr"]
 	path = config/hypr
 	url = git@github.com:SanteriHetekivi/hypr.git
+[submodule "config/waybar"]
+	path = config/waybar
+	url = git@github.com:SanteriHetekivi/waybar.git
