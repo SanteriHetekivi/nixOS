@@ -18,8 +18,8 @@
     extraSpecialArgs = { inherit inputs; };
     backupFileExtension = "hm-backup";
     users = {
-      "santeri" = import ./users/santeri/home.nix;
-      "root" = import ./users/root/home.nix;
+      "santeri" = import ./../users/santeri/home.nix;
+      "root" = import ./../users/root/home.nix;
     };
   };
   # Enable automatic login for the user.

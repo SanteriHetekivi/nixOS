@@ -43,8 +43,14 @@
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
-
-    # # You can also set the file content immediately.
+    #  ".config/nvim2" = {
+    # source = pkgs.gitClone {
+    #   url = "https://github.com/SanteriHetekivi/nixOS.git";
+    #   rev = "main";
+    # };
+    # recursive = true;
+    #};
+    #: # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
@@ -77,5 +83,6 @@
   xdg.configFile = {
     hypr.source = "${inputs.config-hypr}"; 
     nvim.source = "${inputs.config-nvim}";
+    #nvim3.source = config.lib.file.mkOutOfStoreSymlink "./config/nvim";
   };
 }

@@ -1,58 +1,34 @@
 # Main PC.
-{ ... }:
+{ pkgs, ... }:
 
 {
   imports = [
     # Hardware scan results.
     ./hardware-configuration.nix
+    # General setup.
+    ./../../modules/general.nix
     # Locale settings.
-    ./locale.nix
+    ./../../modules/locale.nix
     # Display settings.
-    ./display.nix
+    ./../../modules/display.nix
     # Desktop enviroment.
-    ./desktop.nix
+    ./../../modules/desktop.nix
     # Gaming config.
-    ./gaming.nix
+    ./../../modules/gaming.nix
     # Sosial media and messaging apps.
-    ./sosial.nix
+    ./../../modules/sosial.nix
     # Users.
-    ./users.nix
+    ./../../users/users.nix
     # Development tools.
-    ./dev.nix
+    ./../../modules/dev.nix
     # Security.
-    ./security.nix
+    ./../../modules/security.nix
     # Editor.
-    ./editor.nix
+    ./../../modules/editor.nix
   ];
   
-  # Bootloader.
-  boot.loader = {
-    systemd-boot.enable = true;
-    efi.canTouchEfiVariables = true;
-  };
-
-  # Networking.
-  networking = {
-    hostName = "main";
-    networkmanager.enable = true;
-  };
-  
-  # Allow flakes.
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
-  # Services.
-  services = {
-    # Enable CUPS to print documents.
-    printing.enable = true;
-    # Keyring.
-    gnome.gnome-keyring.enable = true;
-  };
-  
-  # Install firefox.
-  programs.firefox.enable = true;
-
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
+  # Hostname.
+  networking.hostName = "main";
 
   system.stateVersion = "24.11";
 }

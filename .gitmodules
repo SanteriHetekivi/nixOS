@@ -1,6 +1,0 @@
-[submodule "hosts/main/users/santeri/config/hypr"]
-	path = hosts/main/users/santeri/config/hypr
-	url = git@github.com:SanteriHetekivi/hypr.git
-[submodule "hosts/main/users/santeri/config/nvim"]
-	path = hosts/main/users/santeri/config/nvim
-	url = git@github.com:SanteriHetekivi/nvim.git
