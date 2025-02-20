@@ -9,6 +9,10 @@
     ./../../modules/general.nix
     # Locale settings.
     ./../../modules/locale.nix
+    # Automatic updates.
+    ./../../modules/update.nix
+    # Cleanup.
+    ./../../modules/clean.nix
     # NVIDIA settings.
     ./../../modules/nvidia.nix
     # Desktop enviroment.
