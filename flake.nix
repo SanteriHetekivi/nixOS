@@ -7,16 +7,6 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    config-nvim = {
-    	url = "github:SanteriHetekivi/nvim";
-	flake = false;
-    };
-    #hyprland.url = "github:hyprwm/Hyprland";
-    config-hypr = {
-    	url = "github:SanteriHetekivi/hypr";
-	flake = false;
-    };
-    ghostty.url = "github:ghostty-org/ghostty";
   };
 
   outputs = { nixpkgs, ... } @ inputs: {
