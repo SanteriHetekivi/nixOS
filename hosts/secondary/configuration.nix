@@ -27,6 +27,8 @@
     ./../../modules/security.nix
     # Editor.
     ./../../modules/editor.nix
+    # SSH
+    ./../../modules/ssh.nix
   ];
   
   # Hostname.
