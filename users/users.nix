@@ -22,6 +22,14 @@
       "root" = import ./../users/root/home.nix;
     };
   };
+  
+  # Dark theme for qt.
+  qt = {
+    enable = true;
+    platformTheme = "gnome";
+    style = "adwaita-dark";
+  };
+
   # Enable automatic login for the user.
   services.displayManager.autoLogin.user = "santeri";
 

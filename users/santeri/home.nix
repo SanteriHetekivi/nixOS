@@ -12,12 +12,33 @@
       ".config/hypr".source = config.lib.file.mkOutOfStoreSymlink "/etc/nixos/config/hypr";
       ".config/waybar".source = config.lib.file.mkOutOfStoreSymlink "/etc/nixos/config/waybar";
     };
+    packages = with pkgs; [
+      # For setting dark theme.
+      dconf
+    ];
   };
 
   programs.git = {
     enable = true;
     userEmail = "santeri@hetekivi.com";
     userName = "Santeri Hetekivi";
+  };
+
+  # Dark theme.
+  dconf = {
+    enable = true;
+    settings = {
+      "org/gnome/desktop/interface" = {
+        color-scheme = "prefer-dark";
+      };
+    };
+  };
+  gtk = {
+    enable = true;
+    theme = {
+      name = "Adwaita-dark";
+      package = pkgs.gnome-themes-extra;
+    };
   };
 }
 

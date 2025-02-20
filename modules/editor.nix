@@ -1,5 +1,5 @@
 # Text editor.
-{ ... }:
+{ pkgs, ... }:
 
 {
   # NeoVIM
@@ -9,6 +9,13 @@
     viAlias = true;
     vimAlias = true;
   };
+
+  environment.systemPackages = with pkgs; [
+    # For searching.
+    ripgrep
+    # For downloading files.
+    wget
+  ];
 
   system.stateVersion = "24.11";
 }
