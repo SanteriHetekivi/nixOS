@@ -5,15 +5,16 @@
 {
   services.xserver = {
     enable = true;
-    desktopManager = {
-      xfce.enable = true;
-    };
+    windowManager.openbox.enable = true;
   };
 
-  # List packages installed in system profile. To search, run:
   environment.systemPackages = with pkgs; [
     # Terminal emulator.
     ghostty
+    # System tray.
+    tint2
+    # Application launcher.
+    rofi
   ];
 
   system.stateVersion = "24.11";

@@ -7,3 +7,9 @@
 [submodule "config/waybar"]
 	path = config/waybar
 	url = git@github.com:SanteriHetekivi/waybar.git
+[submodule "config/openbox"]
+	path = config/openbox
+	url = git@github.com:SanteriHetekivi/openbox.git
+[submodule "config/tint2"]
+	path = config/tint2
+	url = git@github.com:SanteriHetekivi/tint2.git

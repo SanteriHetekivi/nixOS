@@ -11,6 +11,8 @@
       ".config/nvim".source = config.lib.file.mkOutOfStoreSymlink "/etc/nixos/config/nvim";
       ".config/hypr".source = config.lib.file.mkOutOfStoreSymlink "/etc/nixos/config/hypr";
       ".config/waybar".source = config.lib.file.mkOutOfStoreSymlink "/etc/nixos/config/waybar";
+      ".config/openbox".source = config.lib.file.mkOutOfStoreSymlink "/etc/nixos/config/openbox";
+      ".config/tint2".source = config.lib.file.mkOutOfStoreSymlink "/etc/nixos/config/tint2";
     };
     packages = with pkgs; [
       # For setting dark theme.
