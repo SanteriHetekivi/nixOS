@@ -14,7 +14,7 @@
     # Cleanup.
     ./../../modules/clean.nix
     # Desktop enviroment.
-    ./../../modules/desktop.nix
+    ./../../modules/desktop/hyprland.nix
     # Gaming config.
     ./../../modules/gaming.nix
     # Sosial media and messaging apps.

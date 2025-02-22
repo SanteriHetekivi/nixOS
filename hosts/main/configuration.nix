@@ -16,7 +16,7 @@
     # NVIDIA settings.
     ./../../modules/nvidia.nix
     # Desktop enviroment.
-    ./../../modules/desktop.nix
+    ./../../modules/desktop/xfce.nix
     # Gaming config.
     ./../../modules/gaming.nix
     # Sosial media and messaging apps.
