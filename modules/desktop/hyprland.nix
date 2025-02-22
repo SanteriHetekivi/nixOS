@@ -3,11 +3,9 @@
 { pkgs, ... }:
 
 {
-  # X11 for XWayland to use.
-  services.xserver.enable = true;
-
-  # Hint Elecrton apps to use Wayland:
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+  imports = [
+    ./server/wayland.nix
+  ]
 
   # Hyprland  
   nix.settings = {
@@ -31,10 +29,6 @@
     dunst
     # Needed for notification deamon to work.
     libnotify
-    # Clipboard for copying and pasting.
-    wl-clipboard
-    # App runner.
-    rofi-wayland
   ];
 
   system.stateVersion = "24.11";

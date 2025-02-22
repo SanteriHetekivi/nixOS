@@ -3,20 +3,16 @@
 { pkgs, ... }:
 
 {
-  imports = [
-    ./server/xorg.nix
-  ];
-
   services.xserver = {
     enable = true;
-    windowManager.openbox.enable = true;
+    excludePackages = with pkgs; [
+      xterm
+    ];
   };
 
   environment.systemPackages = with pkgs; [
-    # Terminal emulator.
-    ghostty
-    # System tray.
-    tint2
+    # Application launcher.
+    rofi
   ];
 
   system.stateVersion = "24.11";
