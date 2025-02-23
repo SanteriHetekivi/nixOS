@@ -11,6 +11,10 @@
     ./../../modules/locale.nix
     # Automatic updates.
     ./../../modules/update.nix
+    # Audio.
+    ./../../modules/audio.nix
+    # Bluetooth.
+    ./../../modules/bluetooth.nix
     # Cleanup.
     ./../../modules/clean.nix
     # NVIDIA settings.
