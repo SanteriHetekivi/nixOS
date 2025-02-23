@@ -11,6 +11,11 @@
     pulse.enable = true;
   };
   
+  environment.systemPackages = with pkgs [
+    # GUI.
+    pavucontrol
+  ];
+
   system.stateVersion = "24.11";
 }
 
