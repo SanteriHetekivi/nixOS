@@ -17,6 +17,8 @@
     ghostty
     # System tray.
     tint2
+    # Setting display resolutions and refresh rates.
+    lxde.lxrandr
   ];
 
   system.stateVersion = "24.11";

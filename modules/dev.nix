@@ -12,6 +12,8 @@
     gcc
     # Rust.
     rustup
+    # Lua language server for nvim config.
+    lua-language-server
   ];
   
   # Version control with git.

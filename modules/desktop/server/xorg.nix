@@ -13,6 +13,8 @@
   environment.systemPackages = with pkgs; [
     # Application launcher.
     rofi
+    # Clipboard.
+    xclip
   ];
 
   system.stateVersion = "24.11";
