@@ -22,12 +22,12 @@
 
   # Configure keymap in X11
   services.xserver.xkb = {
-    layout = "fi";
-    variant = "";
+    layout = "us,fi";
+    options = "eurosign:e, compose:menu, grp:alt_shift_toggle";
   };
 
   # Configure console keymap
-  console.keyMap = "fi";
+  console.keyMap = "us";
   
   system.stateVersion = "24.11";
 }
