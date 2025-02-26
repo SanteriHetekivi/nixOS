@@ -15,7 +15,9 @@
     ./../../modules/clean.nix
     # Desktop enviroment.
     ./../../modules/desktop/hyprland.nix
-     # Terminal emulator.
+    # Shell.
+    ./../../modules/shell.nix
+    # Terminal emulator.
     ./../../modules/terminal.nix
     # Gaming config.
     ./../../modules/gaming.nix

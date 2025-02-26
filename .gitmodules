@@ -13,3 +13,6 @@
 [submodule "config/tint2"]
 	path = config/tint2
 	url = git@github.com:SanteriHetekivi/tint2.git
+[submodule "config/zsh"]
+	path = config/zsh
+	url = git@github.com:SanteriHetekivi/zsh.git
