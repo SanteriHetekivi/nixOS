@@ -21,6 +21,8 @@
     ./../../modules/nvidia.nix
     # Desktop enviroment.
     ./../../modules/desktop/openbox.nix
+    # Terminal emulator.
+    ./../../modules/terminal.nix
     # Gaming config.
     ./../../modules/gaming.nix
     # Sosial media and messaging apps.

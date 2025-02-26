@@ -13,8 +13,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-    # Terminal emulator.
-    ghostty
     # System tray.
     tint2
     # Setting display resolutions and refresh rates.

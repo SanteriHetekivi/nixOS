@@ -21,8 +21,6 @@
 
   # List packages installed in system profile. To search, run:
   environment.systemPackages = with pkgs; [
-    # Terminal emulator.
-    ghostty
     # System bar.
     waybar
     # Notification deamon.
