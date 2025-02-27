@@ -1,6 +1,5 @@
 # Main PC.
 { pkgs, ... }:
-
 {
   imports = [
     # Hardware scan results.
@@ -11,6 +10,10 @@
     ./../../modules/locale.nix
     # Automatic updates.
     ./../../modules/update.nix
+    # Audio.
+    ./../../modules/audio.nix
+    # Bluetooth.
+    ./../../modules/bluetooth.nix
     # Cleanup.
     ./../../modules/clean.nix
     # Desktop enviroment.
@@ -31,7 +34,7 @@
     ./../../modules/security.nix
     # Editor.
     ./../../modules/editor.nix
-    # SSH
+    # SSH.
     ./../../modules/ssh.nix
   ];
   
