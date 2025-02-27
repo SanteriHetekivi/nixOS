@@ -1,6 +1,5 @@
 # Locale and language settings.
 { ... }:
-
 {
   # Set your time zone.
   time.timeZone = "Europe/Helsinki";
@@ -23,7 +22,7 @@
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us,fi";
-    options = "eurosign:e, compose:menu, grp:alt_shift_toggle";
+    options = "eurosign:e, compose:menu, grp:alt_caps_toggle";
   };
 
   # Configure console keymap

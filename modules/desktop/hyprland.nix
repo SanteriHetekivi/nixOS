@@ -1,11 +1,9 @@
 # Configure desktop enviroment.
-
 { pkgs, ... }:
-
 {
   imports = [
     ./server/wayland.nix
-  ]
+  ];
 
   # Hyprland  
   nix.settings = {

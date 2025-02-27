@@ -25,6 +25,13 @@
           inputs.home-manager.nixosModules.default
         ];
       };
+      t440s = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs; };
+        modules = [
+	  ./hosts/t440s/configuration.nix
+          inputs.home-manager.nixosModules.default
+        ];
+      };
     };
   };
 }
