@@ -1,6 +1,5 @@
 # General.
 { ... }:
-
 {
   # Bootloader.
   boot.loader = {
@@ -21,9 +20,6 @@
     # Keyring.
     gnome.gnome-keyring.enable = true;
   };
-  
-  # Install firefox.
-  programs.firefox.enable = true;
   
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;

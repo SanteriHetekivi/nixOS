@@ -25,6 +25,8 @@
     ./../../modules/shell.nix
     # Terminal emulator.
     ./../../modules/terminal.nix
+    # Internet browser.
+    ./../../modules/browser.nix
     # Gaming config.
     ./../../modules/gaming.nix
     # Sosial media and messaging apps.
