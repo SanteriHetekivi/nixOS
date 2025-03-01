@@ -18,7 +18,7 @@
             ".zlogin".source = config.lib.file.mkOutOfStoreSymlink "/etc/nixos/config/zsh/.zlogin";
         };
         packages = with pkgs; [
-# For setting dark theme.
+            # For setting dark theme.
             dconf
         ];
     };
@@ -29,7 +29,7 @@
         userName = "Santeri Hetekivi";
     };
 
-# Dark theme.
+    # Dark theme.
     dconf = {
         enable = true;
         settings = {

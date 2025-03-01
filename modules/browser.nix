@@ -17,6 +17,7 @@
                 "privacy.trackingprotection.enabled" = true;
                 "privacy.trackingprotection.fingerprinting.enabled" = true;
                 "privacy.trackingprotection.socialtracking.enabled" = true;
+                "ui.systemUsesDarkTheme" = 1;
             };
             ExtensionSettings = {
                 "jid1-ZAdIEUB7XOzOJw@jetpack" = {
