@@ -45,5 +45,14 @@
             package = pkgs.gnome-themes-extra;
         };
     };
+
+    programs.librewolf = {
+        enable = true;
+        settings = {
+            "privacy.clearOnShutdown_v2.cookiesAndStorage" = false;
+            "privacy.clearOnShutdown_v2.historyFormDataAndDownloads" = true;
+            "network.cookie.lifetimePolicy" = 0;
+        };
+    };
 }
 
