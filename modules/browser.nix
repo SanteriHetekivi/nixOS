@@ -7,17 +7,17 @@
         policies = {
             DisableTelemetry = true;
             DisableFirefoxStudies = true;
+            DisablePocket = true;
+            DisableFirefoxAccounts = true;
+            DisplayBookmarksToolbar = "newtab";
+            DisplayMenuBar = "default-off";
+            SearchBar = "unified";
             Preferences = {
-                "cookiebanners.service.mode.privateBrowsing" = 1;
-                "cookiebanners.service.mode" = 1;
-                "privacy.donottrackheader.enabled" = true;
-                "privacy.fingerprintingProtection" = true;
-                "privacy.resistFingerprinting" = true;
-                "privacy.trackingprotection.emailtracking.enabled" = true;
-                "privacy.trackingprotection.enabled" = true;
-                "privacy.trackingprotection.fingerprinting.enabled" = true;
-                "privacy.trackingprotection.socialtracking.enabled" = true;
                 "ui.systemUsesDarkTheme" = 1;
+                "browser.translations.neverTranslateLanguages" = "fi,en";
+                ## Enable DRM content.
+                "media.eme.enabled" = true;
+                "media.gmp-widevinecdm.enabled" = true;
             };
             ExtensionSettings = {
                 "jid1-ZAdIEUB7XOzOJw@jetpack" = {
