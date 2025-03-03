@@ -7,9 +7,6 @@
     efi.canTouchEfiVariables = true;
   };
 
-  # Networking.
-  networking.networkmanager.enable = true;
-  
   # Allow flakes.
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 

@@ -6,6 +6,8 @@
     ./hardware-configuration.nix
     # General setup.
     ./../../modules/general.nix
+    # Network.
+    ./../../modules/network.nix
     # Locale settings.
     ./../../modules/locale.nix
     # Automatic updates.
