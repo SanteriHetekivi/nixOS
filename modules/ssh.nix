@@ -16,7 +16,7 @@
         # main - root
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIP6F8LGcSMfOaXoJdZPMEA6+msPVtV9GTyYuXAppyrAf"
         # secondary - santeri
-        #"TODO"
+        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFjP4+fJ9firJ3u+Hc0579Bc5DlodGtn6xBKMD3iG9vj santeri@hetekivi."
         # secondary - root
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHeB5pinfPGkSKVxPLAqIXevEuJJa4ZrZgBPPjwVCFqc"
         # t440s - santeri
