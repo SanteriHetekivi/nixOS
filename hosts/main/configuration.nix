@@ -17,12 +17,14 @@
     ./../../modules/audio.nix
     # Bluetooth.
     ./../../modules/bluetooth.nix
+    # Xbox Elite 2 Controller.
+    ./../../modules/device/xbox-elite2.nix
     # Cleanup.
     ./../../modules/clean.nix
     # NVIDIA settings.
     ./../../modules/nvidia.nix
     # Desktop enviroment.
-    ./../../modules/desktop/openbox.nix
+    ./../../modules/desktop/kde.nix
     # Shell.
     ./../../modules/shell.nix
     # Terminal emulator.
@@ -43,6 +45,8 @@
     ./../../modules/editor.nix
     # SSH.
     ./../../modules/ssh.nix
+    # Virtualization
+    ./../../modules/virtual.nix
   ];
   
   # Hostname.
