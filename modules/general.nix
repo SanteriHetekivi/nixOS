@@ -14,8 +14,6 @@
   services = {
     # Enable CUPS to print documents.
     printing.enable = true;
-    # Keyring.
-    gnome.gnome-keyring.enable = true;
   };
   
   # Allow unfree packages

@@ -24,7 +24,7 @@
     # NVIDIA settings.
     ./../../modules/nvidia.nix
     # Desktop enviroment.
-    ./../../modules/desktop/kde.nix
+    ./../../modules/desktop/kde6.nix
     # Shell.
     ./../../modules/shell.nix
     # Terminal emulator.

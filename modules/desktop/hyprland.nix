@@ -27,5 +27,6 @@
     libnotify
   ];
 
+  services.gnome.gnome-keyring.enable = true;
   system.stateVersion = "24.11";
 }

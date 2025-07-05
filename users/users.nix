@@ -20,25 +20,6 @@
         };
     };
 
-    # Dark theme for qt.
-    qt = {
-        enable = true;
-        platformTheme = "gnome";
-        style = "adwaita-dark";
-    };
-    environment.etc = { 
-        "gtk-2.0/gtkrc".text = ''
-            gtk-application-prefer-dark-theme=1
-        '';
-        "xdg/gtk-3.0/settings.ini".text = ''
-            [Settings]
-            gtk-application-prefer-dark-theme=1
-        '';
-        "xdg/gtk-4.0/settings.ini".text = ''
-            [Settings]
-            gtk-application-prefer-dark-theme=1
-        '';
-    };
     # Enable automatic login for the user.
     services.displayManager.autoLogin.user = "santeri";
 
