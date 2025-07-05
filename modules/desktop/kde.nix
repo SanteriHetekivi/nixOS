@@ -1,22 +1,24 @@
 # KDE.
-# Using plasma5, because SteamOS uses it and main reason for this is Steam support.
 { pkgs, ... }:
 {
     imports = [
-        ./server/xorg.nix
+        ./server/wayland.nix
     ];
-
     services = {
-        xserver = {
-            enable = true;
-            desktopManager.plasma5.enable = true;
+        desktopManager.plasma6.enable = true;
+        displayManager = {
+            defaultSession = "plasma";
+            sddm = {
+                enable = true;
+                wayland.enable = true;
+            };
         };
-        displayManager.sddm.enable = true;
     };
-
-    environment.plasma5.excludePackages = with pkgs.libsForQt5; [
+    environment.plasma6.excludePackages = with pkgs.kdePackages; [
         plasma-browser-integration
+        kdepim-runtime
         konsole
+        oxygen
     ];
 
     system.stateVersion = "24.11";

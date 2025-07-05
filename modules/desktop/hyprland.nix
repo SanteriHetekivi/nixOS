@@ -25,6 +25,8 @@
     dunst
     # Needed for notification deamon to work.
     libnotify
+    # App runner.
+    rofi-wayland
   ];
 
   services.gnome.gnome-keyring.enable = true;
