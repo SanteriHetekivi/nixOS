@@ -46,6 +46,38 @@
         };
     };
 
+    # Plasma config with plasma-manager
+    programs.plasma = {
+        enable = true;
+        overrideConfig = true;
+        workspace = {
+            colorScheme = "BreezeDark";
+            lookAndFeel = "org.kde.breezedark.desktop";
+            iconTheme = "breeze-dark";
+            cursor.theme = "breeze_cursors";
+            wallpaperPlainColor = "0,0,0";
+        };
+        kscreenlocker = {
+            autoLock = false;
+            timeout = 0;
+            appearance.wallpaperPlainColor = "0,0,0";
+        };
+        powerdevil = {
+            AC = {
+                autoSuspend.action = "nothing";
+                dimDisplay.enable = false;
+                inhibitLidActionWhenExternalMonitorConnected = true;
+                powerProfile = "performance";
+                turnOffDisplay.idleTimeout = "never";
+            };
+            general.pausePlayersOnSuspend = true;
+        };
+        session = {
+            general.askForConfirmationOnLogout = false;
+            sessionRestore.restoreOpenApplicationsOnLogin = "startWithEmptySession";
+        };
+    };
+
     programs.librewolf = {
         enable = true;
         settings = {
