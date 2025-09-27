@@ -47,6 +47,8 @@
     ./../../modules/ssh.nix
     # Virtualization
     ./../../modules/virtual.nix
+    # Printer
+    ./../../modules/printer.nix
   ];
   
   # Hostname.
