@@ -14,7 +14,7 @@
     home-manager = {
         useGlobalPkgs = true;
         useUserPackages = true;
-        sharedModules = [ inputs.plasma-manager.homeManagerModules.plasma-manager ];
+        sharedModules = [ inputs.plasma-manager.homeModules.plasma-manager ];
         extraSpecialArgs = { inherit inputs; };
         backupFileExtension = "hm-backup";
         users = {

@@ -39,6 +39,8 @@
     ./../../users/users.nix
     # Development tools.
     ./../../modules/dev.nix
+    # Android development.
+    ./../../modules/development/android.nix
     # Security.
     ./../../modules/security.nix
     # Editor.
