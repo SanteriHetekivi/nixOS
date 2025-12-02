@@ -25,8 +25,10 @@
 
     programs.git = {
         enable = true;
-        userEmail = "santeri@hetekivi.com";
-        userName = "Santeri Hetekivi";
+        settings.user = {
+            email = "santeri@hetekivi.com";
+            name = "Santeri Hetekivi";
+        };
     };
 
     # Dark theme.
