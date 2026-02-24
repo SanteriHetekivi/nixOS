@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, inputs, lockOnResume, ... }:
 {
     programs.home-manager.enable = true;
 
@@ -61,6 +61,7 @@
         };
         kscreenlocker = {
             autoLock = false;
+            lockOnResume = lockOnResume;
             timeout = 0;
             appearance.wallpaperPlainColor = "0,0,0";
         };

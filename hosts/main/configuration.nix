@@ -1,6 +1,5 @@
 # Main PC.
 { pkgs, ... }:
-
 {
   imports = [
     # Hardware scan results.
@@ -52,9 +51,12 @@
     # Printer
     ./../../modules/printer.nix
   ];
-  
+
   # Hostname.
   networking.hostName = "main";
+
+  # Do not lock the screen when the system resumes from sleep.
+  local.users.lockOnResume = false;
 
   system.stateVersion = "24.11";
 }
