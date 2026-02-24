@@ -22,7 +22,7 @@
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us,fi";
-    options = "eurosign:e, compose:menu, grp:alt_caps_toggle";
+    options = "eurosign:e, compose:menu, grp:win_space_toggle";
   };
 
   # Configure console keymap
