@@ -22,16 +22,16 @@
         in {
             nixosConfigurations = {
                 main = nixpkgs.lib.nixosSystem {
-                specialArgs = { inherit inputs; };
-                modules = sharedModules ++ [ ./hosts/main/configuration.nix ];
+                    specialArgs = { inherit inputs; };
+                    modules = sharedModules ++ [ ./hosts/main/configuration.nix ];
                 };
                 secondary = nixpkgs.lib.nixosSystem {
-                specialArgs = { inherit inputs; };
-                modules = sharedModules ++ [ ./hosts/secondary/configuration.nix ];
+                    specialArgs = { inherit inputs; };
+                    modules = sharedModules ++ [ ./hosts/secondary/configuration.nix ];
                 };
                 t440s = nixpkgs.lib.nixosSystem {
-                specialArgs = { inherit inputs; };
-                modules = sharedModules ++ [ ./hosts/t440s/configuration.nix ];
+                    specialArgs = { inherit inputs; };
+                    modules = sharedModules ++ [ ./hosts/t440s/configuration.nix ];
                 };
             };
         };
