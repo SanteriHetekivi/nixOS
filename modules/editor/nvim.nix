@@ -1,4 +1,4 @@
-# Text editor.
+# NeoVIM
 { pkgs, ... }:
 
 {

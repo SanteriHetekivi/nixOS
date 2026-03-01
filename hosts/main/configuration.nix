@@ -40,10 +40,13 @@
     ./../../modules/dev.nix
     # Android development.
     ./../../modules/development/android.nix
+    # Running containers.
+    ./../../modules/development/containers.nix
     # Security.
     ./../../modules/security.nix
-    # Editor.
-    ./../../modules/editor.nix
+    # Editors.
+    ./../../modules/editor/nvim.nix
+    ./../../modules/editor/vscode.nix
     # SSH.
     ./../../modules/ssh.nix
     # Virtualization

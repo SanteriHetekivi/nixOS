@@ -13,30 +13,26 @@
             inputs.home-manager.follows = "home-manager";
         };
     };
-
-    outputs = { nixpkgs, ... } @ inputs: {
-        nixosConfigurations = {
-            main = nixpkgs.lib.nixosSystem {
+    outputs = { nixpkgs, ... } @ inputs:
+        let
+            sharedModules = [
+                { nixpkgs.config.allowUnfree = true; }
+                inputs.home-manager.nixosModules.default
+            ];
+        in {
+            nixosConfigurations = {
+                main = nixpkgs.lib.nixosSystem {
                 specialArgs = { inherit inputs; };
-                modules = [
-                    ./hosts/main/configuration.nix
-                    inputs.home-manager.nixosModules.default
-                ];
-            };
-            secondary = nixpkgs.lib.nixosSystem {
+                modules = sharedModules ++ [ ./hosts/main/configuration.nix ];
+                };
+                secondary = nixpkgs.lib.nixosSystem {
                 specialArgs = { inherit inputs; };
-                modules = [
-                    ./hosts/secondary/configuration.nix
-                    inputs.home-manager.nixosModules.default
-                ];
-            };
-            t440s = nixpkgs.lib.nixosSystem {
+                modules = sharedModules ++ [ ./hosts/secondary/configuration.nix ];
+                };
+                t440s = nixpkgs.lib.nixosSystem {
                 specialArgs = { inherit inputs; };
-                modules = [
-                    ./hosts/t440s/configuration.nix
-                        inputs.home-manager.nixosModules.default
-                ];
+                modules = sharedModules ++ [ ./hosts/t440s/configuration.nix ];
+                };
             };
         };
-    };
 }

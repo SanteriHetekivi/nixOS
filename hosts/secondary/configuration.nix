@@ -35,7 +35,7 @@
     # Security.
     ./../../modules/security.nix
     # Editor.
-    ./../../modules/editor.nix
+    ./../../modules/editor/nvim.nix
     # SSH.
     ./../../modules/ssh.nix
   ];
