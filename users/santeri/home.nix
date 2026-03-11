@@ -59,6 +59,11 @@
             cursor.theme = "breeze_cursors";
             wallpaperPlainColor = "0,0,0";
         };
+        shortcuts = {
+            ksmserver.LogOut = "Alt+Shift+E";
+            kwin."Window Close" = "Alt+Shift+Q";
+            "services/com.mitchellh.ghostty.desktop"._launch = "Alt+Return";
+        };
         kscreenlocker = {
             autoLock = false;
             lockOnResume = lockOnResume;
