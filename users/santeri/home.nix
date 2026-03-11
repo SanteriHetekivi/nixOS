@@ -79,6 +79,12 @@
             general.askForConfirmationOnLogout = false;
             sessionRestore.restoreOpenApplicationsOnLogin = "startWithEmptySession";
         };
+        kwin = {
+            nightLight = {
+                enable = true;
+                mode = "automatic";
+            };
+        };
     };
 
     programs.librewolf = {
