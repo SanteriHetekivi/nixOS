@@ -6,6 +6,8 @@
     ./hardware-configuration.nix
     # General setup.
     ./../../modules/general.nix
+    # Tools for Secure Boot.
+    ./../../modules/secure_boot.nix
     # Network.
     ./../../modules/network.nix
     # Locale settings.

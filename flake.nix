@@ -12,8 +12,12 @@
             inputs.nixpkgs.follows = "nixpkgs";
             inputs.home-manager.follows = "home-manager";
         };
+        lanzaboote = {
+            url = "github:nix-community/lanzaboote/v1.0.0";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
     };
-    outputs = { nixpkgs, ... } @ inputs:
+    outputs = { nixpkgs, lanzaboote,... } @ inputs:
         let
             sharedModules = [
                 { nixpkgs.config.allowUnfree = true; }
@@ -23,7 +27,10 @@
             nixosConfigurations = {
                 main = nixpkgs.lib.nixosSystem {
                     specialArgs = { inherit inputs; };
-                    modules = sharedModules ++ [ ./hosts/main/configuration.nix ];
+                    modules = sharedModules ++ [
+                        lanzaboote.nixosModules.lanzaboote
+                        ./hosts/main/configuration.nix
+                    ];
                 };
                 secondary = nixpkgs.lib.nixosSystem {
                     specialArgs = { inherit inputs; };
