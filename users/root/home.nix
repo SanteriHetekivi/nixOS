@@ -21,6 +21,8 @@
             email = "santeri@hetekivi.com";
             name = "Santeri Hetekivi";
         };
+        # TODO: Add signing.
+        signing.format = null;
     };
 }
 
