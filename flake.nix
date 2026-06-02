@@ -21,15 +21,6 @@
         let
             sharedModules = [
                 { nixpkgs.config.allowUnfree = true; }
-                # TODO: remove once https://github.com/NixOS/nixpkgs/issues/514113 is fixed
-                { nixpkgs.overlays = [
-                        (final: prev: {
-                            openldap = prev.openldap.overrideAttrs (_: {
-                                doCheck = false;
-                            });
-                        })
-                    ];
-                }
                 inputs.home-manager.nixosModules.default
             ];
         in {
