@@ -5,8 +5,7 @@
   # List packages installed in system profile.
   environment.systemPackages = with pkgs; [
     # Password manager.
-    # TODO: Uncomment when bitwarden-desktop uses newer electron: https://github.com/NixOS/nixpkgs/issues/526914
-    #bitwarden-desktop
+    bitwarden-desktop
     # 2FA
     ente-auth
   ];
