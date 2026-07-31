@@ -13,7 +13,7 @@
             inputs.home-manager.follows = "home-manager";
         };
         lanzaboote = {
-            url = "github:nix-community/lanzaboote/v1.0.0";
+            url = "github:nix-community/lanzaboote/v1.1.0";
             inputs.nixpkgs.follows = "nixpkgs";
         };
     };
