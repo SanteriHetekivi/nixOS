@@ -16,11 +16,20 @@
             url = "github:nix-community/lanzaboote/v1.2.0";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+        # Pre build CachyOS kernels for gaming peformance.
+        nix-cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel/release";
     };
-    outputs = { nixpkgs, lanzaboote,... } @ inputs:
+    outputs = { nixpkgs, nix, lanzaboote,... } @ inputs:
         let
             sharedModules = [
-                { nixpkgs.config.allowUnfree = true; }
+                {
+                    nixpkgs.config.allowUnfree = true;
+                    nix.settings = {
+                        # Setup to use binary cache for CachyOS kernels.
+                        substituters = [ "https://attic.xuyh0120.win/lantian" ];
+                        trusted-public-keys = [ "lantian:EeAUQ+W+6r7EtwnmYjeVwx5kOGEBpjlBfPlzGlTNvHc=" ];
+                    };
+                }
                 inputs.home-manager.nixosModules.default
             ];
         in {

@@ -63,6 +63,9 @@
   # Do not lock the screen when the system resumes from sleep.
   local.users.lockOnResume = false;
 
+  # Use CachyOS kernel with BORE scheduler for my CPU.
+  boot.kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-bore-x86_64-v3;
+
   system.stateVersion = "24.11";
 }
 

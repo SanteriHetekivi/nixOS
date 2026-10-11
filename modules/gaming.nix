@@ -2,6 +2,11 @@
 { pkgs, ... }:
 
 {
+  imports = [
+    # Use CachyOS kernel.
+    ./kernel/cachyos.nix
+  ];
+
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
