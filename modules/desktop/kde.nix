@@ -20,7 +20,5 @@
         konsole
         oxygen
     ];
-
-    system.stateVersion = "24.11";
 }
 

@@ -5,6 +5,4 @@
     # Visual Studio Code.
     vscode
   ];
-
-  system.stateVersion = "24.11";
 }

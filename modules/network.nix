@@ -8,7 +8,5 @@
     networkmanagerapplet
     networkmanager_dmenu
   ];
-
-  system.stateVersion = "24.11";
 }
 

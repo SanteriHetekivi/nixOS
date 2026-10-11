@@ -26,7 +26,5 @@
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAtPTyCFF+KKoJKIcHf1eGCqaqisJDYxluSbURsoPH6Y root@t440s.lan"
         # pixel6a - santeri
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILE73KN1ehnpoZIV7Npd/B25Bc97BYjouHEOz1bcrUUJ santeri@pixel6a.lan"
-    ]; 
-
-    system.stateVersion = "24.11";
+    ];
 }

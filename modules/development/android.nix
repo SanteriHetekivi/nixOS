@@ -8,6 +8,4 @@
   ];
   nixpkgs.config.android_sdk.accept_license = true;
   users.users.santeri.extraGroups = ["kvm" "adbusers"];
-  system.stateVersion = "24.11";
 }
-

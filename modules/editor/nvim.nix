@@ -16,7 +16,5 @@
     # For downloading files.
     wget
   ];
-
-  system.stateVersion = "24.11";
 }
 

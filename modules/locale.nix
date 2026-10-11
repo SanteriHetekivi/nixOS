@@ -27,7 +27,5 @@
 
   # Configure console keymap
   console.keyMap = "us";
-  
-  system.stateVersion = "24.11";
 }
 

@@ -35,7 +35,5 @@
 
         # Enable automatic login for the user.
         services.displayManager.autoLogin.user = "santeri";
-
-        system.stateVersion = "24.11";
     };
 }

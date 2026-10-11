@@ -19,6 +19,4 @@
         # Setting display resolutions and refresh rates.
         lxde.lxrandr
     ];
-
-    system.stateVersion = "24.11";
 }

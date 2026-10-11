@@ -21,7 +21,5 @@
     enable = true;
     config.init.defaultBranch = "main";
   };
-
-  system.stateVersion = "24.11";
 }
 

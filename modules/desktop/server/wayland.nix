@@ -11,7 +11,5 @@
     # Clipboard for copying and pasting.
     wl-clipboard
   ];
-
-  system.stateVersion = "24.11";
 }
 

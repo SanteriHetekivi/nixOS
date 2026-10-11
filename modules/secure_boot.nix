@@ -12,7 +12,5 @@
         enable = true;
         pkiBundle = "/var/lib/sbctl";
     };
-
-    system.stateVersion = "24.11";
 }
 

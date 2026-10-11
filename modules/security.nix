@@ -9,7 +9,5 @@
     # 2FA
     ente-auth
   ];
-
-  system.stateVersion = "24.11";
 }
 

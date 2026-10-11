@@ -30,6 +30,4 @@
     # Epic Games Store, GOG and other non Steam stores.
     heroic
   ];
-
-  system.stateVersion = "24.11";
 }
